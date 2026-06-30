@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Farrukh385/mern-Thinkboard/issues"
   },
-  "homepage": "https://github.com/Farrukh385/mern-Thinkboard#readme"
+  "homepage": "https://github.com/Farrukh385/mern-Thinkboard#readme",
+  "dependencies": {
+    "sweetalert2": "^11.26.25"
+  }
 }

@@ -19,6 +19,7 @@ const Createpage = () => {
       return;
     }
     setLoading(true);
+
     try {
       await api.post("/notes", {
         title,
