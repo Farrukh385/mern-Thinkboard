@@ -4,6 +4,7 @@ import api from "../lib/axios";
 import toast from "react-hot-toast";
 import { ArrowLeftIcon, LoaderIcon, Trash2Icon } from "lucide-react";
 import StatusBadge from "../components/StatusBadge";
+import Navbar from "../components/Navbar";
 
 const NoteDetailPage = () => {
   const [note, setNote] = useState({ title: "", content: "" });
@@ -32,7 +33,7 @@ const NoteDetailPage = () => {
   const handleDelete = async () => {
     const result = await StatusBadge({
       title: "Delete Note?",
-      text: "Are you sure to delete this?",
+      text: "note detail side?",
       confirmButtonText: "Delete",
       cancelButtonText: "Cancel",
     });
@@ -79,6 +80,7 @@ const NoteDetailPage = () => {
 
   return (
     <div className="min-h-screen bg-base-200">
+      <Navbar />
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-2xl mx-auto">
           <div className="flex items-center justify-between mb-6">

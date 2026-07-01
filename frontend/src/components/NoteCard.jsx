@@ -13,7 +13,7 @@ const NoteCard = ({ note, setNotes }) => {
 
     const result = await StatusBadge({
       title: "Delete Note?",
-      text: "Are you sure to delete this?",
+      text: "note card side?",
       confirmButtonText: "Delete",
       cancelButtonText: "Cancel",
     });
